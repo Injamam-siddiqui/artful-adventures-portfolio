@@ -105,28 +105,34 @@ const Index = () => {
         {/* Projects */}
         <div className="py-32" id="projects">
           <FadeSection>
-            <h2 className="font-heading text-4xl md:text-5xl mb-16">Projects</h2>
+            <h2 className="section-heading font-heading text-4xl md:text-5xl mb-16">Projects</h2>
           </FadeSection>
 
-          {/* Project 1 */}
-          <FadeSection delay={150} className="mb-24">
-            <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-3">C</p>
-            <h3 className="font-heading text-3xl mb-4">Calculator</h3>
-            <p className="font-mono text-sm text-foreground/70 max-w-[520px] leading-relaxed">
-              A fundamental mathematical calculator built from scratch in C. 
-              An exercise in understanding low-level computation, operator precedence, and clean input handling.
-            </p>
-          </FadeSection>
+          <div className="grid gap-8">
+            {/* Project 1 */}
+            <FadeSection delay={150}>
+              <div className="project-card group">
+                <p className="font-mono text-xs text-primary/80 uppercase tracking-widest mb-3">C</p>
+                <h3 className="font-heading text-3xl mb-4 group-hover:text-primary transition-colors duration-300">Calculator</h3>
+                <p className="font-mono text-sm text-foreground/70 max-w-[520px] leading-relaxed">
+                  A fundamental mathematical calculator built from scratch in C. 
+                  An exercise in understanding low-level computation, operator precedence, and clean input handling.
+                </p>
+              </div>
+            </FadeSection>
 
-          {/* Project 2 */}
-          <FadeSection delay={150}>
-            <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-3">HTML · CSS</p>
-            <h3 className="font-heading text-3xl mb-4">YouTube Clone</h3>
-            <p className="font-mono text-sm text-foreground/70 max-w-[520px] leading-relaxed">
-              A pixel-accurate recreation of YouTube's frontend interface. 
-              A study in layout systems, responsive design, and translating complex UI patterns into clean markup.
-            </p>
-          </FadeSection>
+            {/* Project 2 */}
+            <FadeSection delay={250}>
+              <div className="project-card group">
+                <p className="font-mono text-xs text-primary/80 uppercase tracking-widest mb-3">HTML · CSS</p>
+                <h3 className="font-heading text-3xl mb-4 group-hover:text-primary transition-colors duration-300">YouTube Clone</h3>
+                <p className="font-mono text-sm text-foreground/70 max-w-[520px] leading-relaxed">
+                  A pixel-accurate recreation of YouTube's frontend interface. 
+                  A study in layout systems, responsive design, and translating complex UI patterns into clean markup.
+                </p>
+              </div>
+            </FadeSection>
+          </div>
         </div>
 
         {/* Achievements */}
