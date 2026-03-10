@@ -69,33 +69,33 @@ const Index = () => {
         {/* Skills */}
         <div className="py-32" id="skills">
           <FadeSection>
-            <h2 className="font-heading text-4xl md:text-5xl mb-16">Skills</h2>
+            <h2 className="section-heading font-heading text-4xl md:text-5xl mb-16">Skills</h2>
           </FadeSection>
 
           <div className="space-y-12">
             <FadeSection delay={100}>
-              <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-4">Languages</p>
-              <div className="flex flex-wrap gap-x-8 gap-y-2">
+              <p className="font-mono text-xs text-primary/80 uppercase tracking-widest mb-4">Languages</p>
+              <div className="flex flex-wrap gap-3">
                 {["C", "Python"].map((s) => (
-                  <span key={s} className="font-mono text-sm text-foreground/90">{s}</span>
+                  <span key={s} className="skill-tag">{s}</span>
                 ))}
               </div>
             </FadeSection>
 
             <FadeSection delay={200}>
-              <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-4">Tools & Technologies</p>
-              <div className="flex flex-wrap gap-x-8 gap-y-2">
+              <p className="font-mono text-xs text-primary/80 uppercase tracking-widest mb-4">Tools & Technologies</p>
+              <div className="flex flex-wrap gap-3">
                 {["Git", "VS Code", "Linux"].map((s) => (
-                  <span key={s} className="font-mono text-sm text-foreground/90">{s}</span>
+                  <span key={s} className="skill-tag">{s}</span>
                 ))}
               </div>
             </FadeSection>
 
             <FadeSection delay={300}>
-              <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-4">Other</p>
-              <div className="flex flex-wrap gap-x-8 gap-y-2">
+              <p className="font-mono text-xs text-primary/80 uppercase tracking-widest mb-4">Other</p>
+              <div className="flex flex-wrap gap-3">
                 {["Problem Solving", "Algorithms", "Data Structures"].map((s) => (
-                  <span key={s} className="font-mono text-sm text-foreground/90">{s}</span>
+                  <span key={s} className="skill-tag">{s}</span>
                 ))}
               </div>
             </FadeSection>
