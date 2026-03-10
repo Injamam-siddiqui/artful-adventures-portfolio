@@ -138,10 +138,10 @@ const Index = () => {
         {/* Achievements */}
         <div className="py-32" id="achievements">
           <FadeSection>
-            <h2 className="font-heading text-4xl md:text-5xl mb-12">Achievements</h2>
+            <h2 className="section-heading font-heading text-4xl md:text-5xl mb-12">Achievements</h2>
           </FadeSection>
           <FadeSection delay={150}>
-            <div className="border-l border-primary/30 pl-6">
+            <div className="card-elevated border-l-2 border-primary/40 pl-6 py-6 pr-6">
               <p className="font-heading text-2xl mb-2">CLUB404</p>
               <p className="font-mono text-sm text-foreground/70">
                 Core team member — Contributing to the university's technical community, 
