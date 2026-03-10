@@ -1,6 +1,7 @@
 import SideNav from "@/components/SideNav";
 import TrailLine from "@/components/TrailLine";
 import FadeSection from "@/components/FadeSection";
+import profileImg from "@/assets/profile.png";
 
 const Index = () => {
   return (
@@ -11,23 +12,38 @@ const Index = () => {
       <main className="max-w-[720px] mx-auto px-6 lg:px-0">
         {/* Hero / Name */}
         <header className="min-h-screen flex flex-col justify-center" id="about">
-          <FadeSection>
-            <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight mb-12">
-              Injamam
-              <br />
-              Mulhasan
-              <br />
-              <span className="italic">Siddiqui</span>
-            </h1>
-          </FadeSection>
-          <FadeSection delay={300}>
-            <p className="font-mono text-sm text-foreground/80 max-w-[480px] leading-relaxed">
-              Computer Science student exploring the intersections of algorithms, data structures, and data science. 
-              Currently in my second year at Aliah University, building foundational systems and chasing deeper patterns in data.
-            </p>
-          </FadeSection>
+          <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 md:gap-12">
+            <div className="flex-1">
+              <FadeSection>
+                <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight mb-12">
+                  Injamam
+                  <br />
+                  Mulhasan
+                  <br />
+                  <span className="italic text-primary">Siddiqui</span>
+                </h1>
+              </FadeSection>
+              <FadeSection delay={300}>
+                <p className="font-mono text-sm text-foreground/80 max-w-[480px] leading-relaxed">
+                  Computer Science student exploring the intersections of algorithms, data structures, and data science. 
+                  Currently in my second year at Aliah University, building foundational systems and chasing deeper patterns in data.
+                </p>
+              </FadeSection>
+            </div>
+            <FadeSection delay={200} className="flex justify-center md:justify-end">
+              <div className="profile-photo-wrapper">
+                <div className="profile-photo-ring">
+                  <img
+                    src={profileImg}
+                    alt="Injamam Mulhasan Siddiqui"
+                    className="profile-photo"
+                  />
+                </div>
+              </div>
+            </FadeSection>
+          </div>
           <FadeSection delay={500}>
-            <div className="mt-8 font-mono text-xs text-muted-foreground">
+            <div className="mt-8 font-mono text-xs text-muted-foreground animate-bounce-subtle">
               scroll to explore ↓
             </div>
           </FadeSection>
