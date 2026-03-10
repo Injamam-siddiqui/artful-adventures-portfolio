@@ -154,7 +154,7 @@ const Index = () => {
         {/* Contact */}
         <div className="py-32 pb-48" id="contact">
           <FadeSection>
-            <h2 className="font-heading text-4xl md:text-5xl mb-16">Contact</h2>
+            <h2 className="section-heading font-heading text-4xl md:text-5xl mb-16">Contact</h2>
           </FadeSection>
 
           <FadeSection delay={100}>
