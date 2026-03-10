@@ -52,11 +52,11 @@ const Index = () => {
         {/* Education */}
         <div className="py-32" id="education">
           <FadeSection>
-            <h2 className="font-heading text-4xl md:text-5xl mb-12">Education</h2>
+            <h2 className="section-heading font-heading text-4xl md:text-5xl mb-12">Education</h2>
           </FadeSection>
           <FadeSection delay={150}>
-            <div className="border-l border-border pl-6">
-              <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-2">2nd Year · Ongoing</p>
+            <div className="card-elevated border-l-2 border-primary/40 pl-6 py-6 pr-6">
+              <p className="font-mono text-xs text-primary/80 uppercase tracking-widest mb-2">2nd Year · Ongoing</p>
               <p className="font-heading text-2xl mb-2">Aliah University</p>
               <p className="font-mono text-sm text-foreground/70">
                 Bachelor of Computer Science — Building a strong foundation in computational thinking, 
